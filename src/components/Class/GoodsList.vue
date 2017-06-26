@@ -34,8 +34,8 @@
     }
   }
 </script>
-<style lang="scss" scoped>
-  .goods-list{
+<style scoped>
+  /*.goods-list{
     overflow: hidden;
     width: 100%;
     ul{
@@ -66,5 +66,5 @@
         }
       }
     }
-  }
+  }*/
 </style>

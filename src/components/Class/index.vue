@@ -2,6 +2,8 @@
 
 <template>
   <div class="list-page">
+    <my-classheader>
+    </my-classheader>
     <my-footer></my-footer>
 
     <my-content>
@@ -14,6 +16,7 @@
 <script>
 import GoodsList from './GoodsList'
 import ClassList from './ClassList'
+import ClassHeader from './ClassHeader'
 
 export default {
   name: 'list-page',
@@ -25,7 +28,8 @@ export default {
   },
   components: {
     'my-class-list':ClassList,
-    'my-goods-list':GoodsList
+    'my-goods-list':GoodsList,
+    'my-classheader':ClassHeader
   },
   methods: {
     getGoodsData(id) {
@@ -48,9 +52,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-.list-page{
+<style scoped>
+/*.list-page{
   width: 100%;height: 100%;overflow: hidden;padding-bottom: 50px;
-}
+}*/
 
 </style>
