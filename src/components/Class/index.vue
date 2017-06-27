@@ -33,28 +33,29 @@ export default {
   },
   methods: {
     getGoodsData(id) {
-      this.$http.jsonp("http://datainfo.duapp.com/shopdata/getGoods.php?classID="+id)
+      this.$http.get(`http://s.maiyaole.com/js/wap/json/getsecondcategory_${id}.json`)
       .then((res)=>{
-        // console.log(res.data);
-        this.goodsData = res.data
+        console.log(res.body.data.categoryinfo);
+        this.goodsData = res.body.data.categoryinfo
       })
     }
   },
   mounted() {
     //do something after mounting vue instance
-    this.$http.get("http://datainfo.duapp.com/shopdata/getclass.php")
+    this.$http.get(`http://s.maiyaole.com/js/wap/json/getcategory.json`)
     .then((res)=>{
-      this.classData  = res.data
+      console.log( res.body.data.categoryinfo)
+      this.classData  =  res.body.data.categoryinfo
     })
-    this.getGoodsData(0)
+    this.getGoodsData(99)
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/*.list-page{
+.list-page{
   width: 100%;height: 100%;overflow: hidden;padding-bottom: 50px;
-}*/
+}
 
 </style>

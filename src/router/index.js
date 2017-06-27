@@ -5,6 +5,8 @@ import Class from '@/components/Class'
 import Cart from '@/components/Cart'
 import Mine from '@/components/Mine'
 import SevenYear from '@/components/SevenYear'
+import GoodsListDetail from '@/components/Class/GoodsListDetail'
+import GoodsDetail from '@/components/Class/GoodsDetail'
 
 Vue.use(Router)
 
@@ -40,5 +42,15 @@ export default new Router({
       name:'mine',
       component:Mine
     },
+    {
+      path:'/goodsListDetail/:id',
+      name:'goodsListDetail',
+      component:GoodsListDetail
+    },
+    {
+      path:'/goodsDetail',
+      name:'goodsDetail',
+      component:GoodsDetail
+    }
   ]
 })

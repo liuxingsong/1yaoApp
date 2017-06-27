@@ -1,8 +1,9 @@
 <template>
-  <div class="sub-header">
-    <ul class="class-list">
-      <li v-for="(ele,index) in classData" :key="index" @click="getGoodsData(ele.classID)">
-        {{ele.className}}
+  <div class="class-nav-bar">
+    <ul>
+      <li v-for="(ele,index) in classData" :key="index" @click="getGoodsData(ele.id,index)"
+      :class="{active:isA==index}">
+        {{ele.name}}
       </li>
     </ul>
   </div>
@@ -10,6 +11,11 @@
 <script>
 export default {
   name: "class-list",
+  data(){
+    return {
+      isA: 0
+    }
+  },
   props: {
     classData:{
       type:Array,
@@ -19,21 +25,43 @@ export default {
     }
   },
   methods: {
-    getGoodsData(id) {
+    getGoodsData(id,index) {
+      this.toggle(index)
       this.$emit("get-goods-data",id)
+    },
+    toggle (index) {
+      this.isA = index;
     }
   }
 }
 </script>
 <style>
-.sub-header{
-  height: 40px;line-height: 40px;width: 100%;border-bottom: 1px solid #e6e6e6
+.class-nav-bar{
+  width: 20%;
+  float: left;
+  position: fixed;
+  left: 0;
+  top: 45px
 }
-.class-list{
-  white-space: nowrap;overflow-x: auto;
+.class-nav-bar ul{
+  width: 100%;
 }
-.class-list li{
-  list-style: none;
-  display:inline-block; font-size:14px; padding:0 10px;
+.class-nav-bar ul li{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #F8F8F8;
+  border: 1px solid #E4E4E4;
+  border-top: none;
+  border-left: none;
+  list-style: none
+}
+.class-nav-bar .active{
+  color: #0695DB;
+  background: #fff;
+  border: none;
+  border-left: 2px solid #0695DB;
+  border-bottom: 1px solid #E4E4E4
 }
 </style>
