@@ -1,45 +1,39 @@
 <template>
   <div class="index">
-
-     <my-footer></my-footer>
-     <my-content>1111111</my-content>
+    <my-footer></my-footer>
+    <lh-header></lh-header>
+    <my-content>
+      <lh-banner></lh-banner>
+      <lh-box></lh-box>
+    </my-content>
   </div>
 
 </template>
 
 <script>
+import Header from "./header"
+import Banner from "./Banner"
+import IndexBox from "./indexBox"
+
 export default {
   name: 'index',
   data () {
     return {
-      selected: "1"
+      classData:[]
     }
   },
-  methods: {
-    fn1 () {
-
-    }
+  components:{
+    "lh-header":Header,
+    "lh-banner":Banner,
+    "lh-box":IndexBox
   }
+
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+.index{background:#f3f3f3;}
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
