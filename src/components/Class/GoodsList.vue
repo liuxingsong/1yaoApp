@@ -26,11 +26,6 @@
       }
     },
     methods: {
-      // getDetail(id) {
-      //   console.log(id);
-      //   this.$emit("get-goods-detail",id)
-      // },
-
       gotoDetail(id){
         this.$router.push({
           name:'goodsListDetail',

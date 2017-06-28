@@ -40,7 +40,7 @@
     mounted(){
       this.$http.get("http://s.maiyaole.com/js/wap/json/getsecondcategory_99.json")
       .then(res=>{
-        console.log(res.data.data.categoryinfo)
+        // console.log(res.data.data.categoryinfo)
         this.classData = res.data.data.categoryinfo
       })
     }

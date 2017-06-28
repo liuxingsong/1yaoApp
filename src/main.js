@@ -17,11 +17,7 @@ import "./assets/animate.css"
 
 import MintUi from "mint-ui"
 Vue.use(MintUi)
-<<<<<<< HEAD
 
-
-
-=======
 import 'mint-ui/lib/style.css'
 
 
@@ -52,7 +48,7 @@ import 'mint-ui/lib/style.css'
 // Vue.component(TabItem.name, TabItem);
 // Vue.component(Header.name, Header);
 // Vue.component(Button.name,Button)
->>>>>>> a9f0e54e79efb37b330ab69c5bd7d38bc8595bf1
+
 
 Vue.component("my-header",myHeader)
 Vue.component("my-footer",Footer)
