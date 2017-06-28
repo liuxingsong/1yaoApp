@@ -5,7 +5,7 @@
     </ul>
   </div>
 </template>
-<script>
+<script >
   export default{
     name:'my-footer',
     data(){

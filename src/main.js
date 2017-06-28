@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import VueResource from 'vue-resource'
 import Vuex from 'vuex'
+
 Vue.use(Vuex)
 
 import Footer from './components/public/Footer'
@@ -16,9 +17,42 @@ import "./assets/animate.css"
 
 import MintUi from "mint-ui"
 Vue.use(MintUi)
+<<<<<<< HEAD
 
 
 
+=======
+import 'mint-ui/lib/style.css'
+
+
+// import {Button} from "mint-ui"
+// import { Header } from 'mint-ui';
+// import { Tabbar, TabItem, Navbar } from 'mint-ui';
+// import { TabContainer, TabContainerItem } from 'mint-ui';
+// import { Loadmore } from 'mint-ui';
+// import { Lazyload } from 'mint-ui';
+// import { Swipe, SwipeItem } from 'mint-ui';
+// import { Cell } from 'mint-ui';
+// import { Popup } from 'mint-ui';
+// import { Actionsheet } from 'mint-ui';
+// import { Search } from 'mint-ui';
+//
+// Vue.component(Search.name, Search);
+// Vue.component(Actionsheet.name, Actionsheet);
+// Vue.component(Popup.name, Popup);
+// Vue.component(Cell.name, Cell);
+// Vue.component(Swipe.name, Swipe);
+// Vue.component(SwipeItem.name, SwipeItem);
+// Vue.use(Lazyload);
+// Vue.component(Loadmore.name, Loadmore);
+// Vue.component(TabContainer.name, TabContainer);
+// Vue.component(TabContainerItem.name, TabContainerItem);
+// Vue.component(Tabbar.name, Tabbar);
+// Vue.component(Navbar.name, Navbar);
+// Vue.component(TabItem.name, TabItem);
+// Vue.component(Header.name, Header);
+// Vue.component(Button.name,Button)
+>>>>>>> a9f0e54e79efb37b330ab69c5bd7d38bc8595bf1
 
 Vue.component("my-header",myHeader)
 Vue.component("my-footer",Footer)

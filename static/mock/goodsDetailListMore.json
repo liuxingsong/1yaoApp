@@ -1,0 +1,84 @@
+{
+   "id": 350,
+   "content": "catalogId=965171",
+   "icon": "",
+   "name": "风湿骨科",
+   "subtitle": "",
+   "thridCategory": [
+     {
+       "id": 352,
+       "content": "catalogId=965176",
+       "icon": "https://p2.maiyaole.com/img/50077/50077490/120_120.jpg?a=1427323037",
+       "name": "东阿阿胶",
+       "subtitle": "抢购",
+       "type":"自营",
+       "fatherId": 350,
+       "triggerType": "250/g盒",
+       "price":"839.0",
+       "number":"1234"
+     },
+     {
+       "id": 353,
+       "content": "catalogId=971322",
+       "icon": "https://p3.maiyaole.com/img/item/201705/03/200_20170503112230348.jpg",
+       "name": "复方阿胶桨",
+       "subtitle": "抢购",
+       "type": "自营",
+       "fatherId": 350,
+       "triggerType": "20ml*48支",
+       "price":"349.0",
+       "number":"194"
+     },
+     {
+       "id": 354,
+       "content": "catalogId=965177",
+       "icon": "https://p2.maiyaole.com/img/201704/25/200_20170425111405954.jpg",
+       "name": "副牌 阿胶",
+       "subtitle": "满赠",
+       "type": "自营",
+       "fatherId": 350,
+       "triggerType":"250g (福胶)",
+       "price":"449.0",
+       "number":"894"
+     },
+     {
+       "id": 357,
+       "content": "catalogId=971272",
+       "icon": "https://p3.maiyaole.com/img/50093/50093353/120_120.jpg",
+       "name": "护彤 小儿感冒颗粒",
+       "subtitle": "满赠",
+       "type": "商家",
+       "fatherId": 350,
+       "triggerType": "10ml*6支",
+       "price":"9.9",
+       "number":"1894"
+     },
+     {
+       "id": 358,
+       "content": "catalogId=965175",
+       "icon": "https://p3.maiyaole.com/img/50181/50181621/120_120.jpg",
+       "name": "护彤 小儿感冒颗粒",
+       "subtitle": "满赠",
+       "type": "商家",
+       "fatherId": 350,
+       "triggerType": "10ml*6支",
+       "price":"69.9",
+       "number":"894"
+     },
+     {
+       "id": 360,
+       "content": "catalogId=965173",
+       "icon": "https://p3.maiyaole.com/img/201702/06/200_20170206090815322.jpg",
+       "name": "穷颗粒",
+       "subtitle": "减满",
+       "type": "自营",
+       "fatherId": 350,
+       "triggerType": "10ml*6支",
+       "price":"39.9",
+       "number":"194"
+     }
+   ],
+   "type": 2,
+   "fatherId": 99,
+   "triggerType": 0
+}

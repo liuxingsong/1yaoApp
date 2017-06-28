@@ -2,9 +2,12 @@
   <div class="goods-list" ref="goods-list">
     <ul>
       <li v-for="(ele,index) in goodsData" :key="index">
-        <img :src="ele.goodsListImg" alt="">
-        <p>{{ele.goodsName}}</p>
-        <span>￥ {{ele.price}}</span>
+        <h4>{{ele.name}}</h4>
+        <div class="" v-for="(el,ind) in ele.thridCategory" :key="ind" class="goodsMsg"
+       @click="gotoDetail(el.id)">
+          <img :src="el.icon" alt="1yao">
+          <p>{{el.name}}</p>
+        </div>
       </li>
     </ul>
   </div>
@@ -22,6 +25,21 @@
         }
       }
     },
+    methods: {
+      // getDetail(id) {
+      //   console.log(id);
+      //   this.$emit("get-goods-detail",id)
+      // },
+
+      gotoDetail(id){
+        this.$router.push({
+          name:'goodsListDetail',
+          params:{
+            id:id
+          }
+        })
+      }
+    },
     mounted() {
       //do something after mounting vue instance
       this.myScroll = new IScroll(this.$refs["goods-list"],{
@@ -34,37 +52,13 @@
     }
   }
 </script>
-<style lang="scss" scoped>
-  .goods-list{
-    overflow: hidden;
-    width: 100%;
-    ul{
-      width: 100%;
-      overflow: hidden;
-      li{
-        width: 50%;
-        overflow: hidden;
-        float: left;
-        height: 300px;
-        img{
-          width: 90%;
-          height: 180px;
-          margin: 5px auto;
-        }
-        p{
-          padding: 5px;
-          text-align: left;
-          height: 40px;
-          overflow: hidden;
-        }
-        span{
-          display: block;
-          width: 90%;
-          padding: 5px;
-          text-align: left;
-          color: red
-        }
-      }
-    }
-  }
+<style scoped>
+  .goods-list{overflow: hidden;width: 80%;float:right}
+  .goods-list ul li{width: 100%;overflow: hidden;}
+  .goods-list ul li h4{font-size: 14px;line-height: 40px;text-align: left;color: #5e5e5e;font-weight:500;
+  border-bottom: 1px solid #E4E4E4;margin: 0 10px}
+  .goods-list .goodsMsg{width: 33%;float:left;overflow: hidden;padding:15px 0;}
+  .goods-list .goodsMsg img{width: 70%;}
+  .goods-list .goodsMsg p{font-size: 13px;color: #000}
+
 </style>

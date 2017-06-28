@@ -27,15 +27,25 @@ module.exports = {
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {
-      '/api':{
-        target:'http://aura.maizuo.com/api',
-        changeOrigin:true,
-        pathRewrite:{
-          '^/api':'/'
+    // proxyTable: {
+    //   '/api':{
+    //     target:'http://aura.maizuo.com/api',
+    //     changeOrigin:true,
+    //     pathRewrite:{
+    //       '^/api':'/'
+    //     }
+    //   }
+    // },
+
+      proxyTable: {
+        '/js':{
+            target: 'http://s.maiyaole.com/js',
+            changeOrigin:true,
+            pathRewrite: {
+              '^/js': '/'
+            }
         }
-      }
-    },
+      },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)
