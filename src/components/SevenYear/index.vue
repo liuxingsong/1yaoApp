@@ -6,8 +6,8 @@
         <span class="iconfontlxs shareicon">&#xe60f;</span>
       </div>
     </my-sy-heder>
-    <my-content classs="content">
-      <img :src="sevenYearData.img01" alt="" class="bigImg">
+    <my-content classs="content" @click="gotop()">
+      <img :src="sevenYearData.img01" alt="" class="bigImg" >
       <img :src="sevenYearData.img02" alt="" class="bigImg">
       <img :src="sevenYearData.img03" alt="" class="bigImg">
       <ul class="typeTitle">
@@ -31,7 +31,6 @@
       <img :src="sevenYearData.img11" alt="" class="bigImg">
     </my-content>
   </div>
-
 </template>
 <!-- <img :src="sevenYearData.img01" alt="" class="bigImg">
 <img :src="sevenYearData.img02" alt="" class="bigImg">
@@ -86,6 +85,9 @@ export default {
   methods: {
     intop() {
 
+    },
+    gotop(){
+      console.log(2222);
     }
   },
   components: {

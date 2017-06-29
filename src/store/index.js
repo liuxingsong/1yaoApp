@@ -18,10 +18,10 @@ const store = new Vuex.Store({
     actions:{ //异步的action
         getProductData({commit}){
             //在actions里面获取数据
-            console.log(Vue.http)
+            // console.log(Vue.http)
             Vue.http.get("/api/recommend/home?page=1&num=20")
             .then(res=>{
-                console.log(res.data.data);//成功以后把数据给mutation
+                // console.log(res.data.data);//成功以后把数据给mutation
                 commit("changeProductData",res.data.data)
             })
 
