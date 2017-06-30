@@ -3,13 +3,13 @@
 <template>
   <div class="index-box">
     <div class="index-promotion-goods">
-      <a href="javascript: return 0;">
+      <router-link to="/together">
         <img src="http://p3.maiyaole.com/img/cmsPage/2015092201/1qiqiang0519.jpg" alt="">
-      </a>
+      </router-link>
       <a href="javascript: return 0;">
         <img src="http://p1.maiyaole.com/img/cmsPage/2015092201/manbing0519%20%282%29.jpg" alt="">
       </a>
-      <a href="javascript: return 0;">
+      <a href="#/family">
         <img src="http://p3.maiyaole.com/img/cmsPage/2015092201/xiaoyaox0519.jpg" alt="">
       </a>
       <a href="javascript: return 0;">
@@ -40,7 +40,10 @@
     mounted(){
       this.$http.get("http://s.maiyaole.com/js/wap/json/getsecondcategory_99.json")
       .then(res=>{
+<<<<<<< HEAD
+=======
         // console.log(res.data.data.categoryinfo)
+>>>>>>> 5debd9498865b6a1bbb6ebd3f9b812b1fa24267d
         this.classData = res.data.data.categoryinfo
       })
     }

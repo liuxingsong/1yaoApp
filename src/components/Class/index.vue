@@ -2,8 +2,7 @@
 
 <template>
   <div class="list-page">
-    <my-classheader>
-    </my-classheader>
+    <my-classheader></my-classheader>
     <my-footer></my-footer>
 
     <my-content>
@@ -55,7 +54,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .list-page{
-  width: 100%;height: 100%;overflow: hidden;padding-bottom: 50px;
+  width: 100%;height: 100%;overflow: hidden;padding-bottom: 50px;padding-top:50px;
 }
 
 </style>

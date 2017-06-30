@@ -21,5 +21,5 @@ export default {
 }
 *{padding:0;margin:0;}
 ul{list-style:none;}
-a{text-decoration:none;}
+a{text-decoration:none;color:black;}
 </style>

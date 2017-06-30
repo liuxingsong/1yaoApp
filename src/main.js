@@ -18,6 +18,8 @@ import "./assets/animate.css"
 import MintUi from "mint-ui"
 Vue.use(MintUi)
 
+<<<<<<< HEAD
+=======
 import 'mint-ui/lib/style.css'
 
 
@@ -49,6 +51,7 @@ import 'mint-ui/lib/style.css'
 // Vue.component(Header.name, Header);
 // Vue.component(Button.name,Button)
 
+>>>>>>> 5debd9498865b6a1bbb6ebd3f9b812b1fa24267d
 
 Vue.component("my-header",myHeader)
 Vue.component("my-footer",Footer)

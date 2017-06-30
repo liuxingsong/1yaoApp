@@ -20,5 +20,6 @@
     padding:0
   }
   .header ~ .content { padding-top:45px;}
+  .lh-header ~ .content { padding-top:45px;}
   .footer ~ .content { padding-bottom:50px;}
 </style>
