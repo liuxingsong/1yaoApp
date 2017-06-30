@@ -5,10 +5,14 @@
     <div class="index-swiper">
       <mt-swipe :auto="4000">
         <mt-swipe-item>
-          <img src="http://p3.maiyaole.com/img/cmsPage/2016070402/zhongxiyao0626.jpg" alt="">
+          <router-link to="/message">
+            <img src="http://p3.maiyaole.com/img/cmsPage/2016070402/zhongxiyao0626.jpg" alt="">
+          </router-link>
         </mt-swipe-item>
         <mt-swipe-item>
-          <img src="http://p3.maiyaole.com/img/cmsPage/2016070402/zhongxiyao0623.jpg" alt="">
+          <router-link to="/message">
+            <img src="http://p3.maiyaole.com/img/cmsPage/2016070402/zhongxiyao0623.jpg" alt="">
+          </router-link>
         </mt-swipe-item>
         <mt-swipe-item>
           <img src="http://p3.maiyaole.com/img/cmsPage/2016070402/3zhongxiyao0626.jpg" alt="">
@@ -28,8 +32,10 @@
           <p>轻松找药</p>
         </li>
         <li>
+        <router-link to="/man">
           <img src="http://p3.maiyaole.com/img/cmsPage/2016070402/nanke%20(1).png" alt="">
           <p>男性</p>
+        </router-link>
         </li>
         <li>
           <img src="http://p1.maiyaole.com/img/cmsPage/2016070402/fukeicon.png" alt="">

@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/components/Index'
+import Message from '@/components/Index/Message'
+import Man from '@/components/Index/Man'
+import Together from '@/components/Index/Together'
+import Family from '@/components/Index/Family'
 import Class from '@/components/Class'
 import Cart from '@/components/Cart'
 import Mine from '@/components/Mine'
@@ -15,13 +19,33 @@ export default new Router({
     {
       path: '/',
       name: 'Index',
-      component: Index
+      component:Index
     },
     {
       path:'/index',
       name:'index',
       component:Index
     },
+    {
+      path:'/message',
+      name:'message',
+      component:Message
+    },
+    {
+      path:'/man',
+      name:'man',
+      component:Man
+    },
+    {
+      path:'/together',
+      name:'together',
+      component:Together
+    },
+    {
+      path:'/family',
+      name:'family',
+      component:Family
+    },    
     {
       path:'/class',
       name:'class',

@@ -1,7 +1,7 @@
 
 
 <template>
-  <div class="header">
+  <div class="lh-header">
     <div class="left">
       <a href="javascript:;">
         <span class="iconfont">
@@ -41,7 +41,7 @@
   a{
     text-decoration: none;color: #999
   }
-  .header{
+  .lh-header{
     height: 44px;width: 100%;position: fixed;top: 0;left: 0;color: #000;
     border-bottom: 1px solid #e6e6e6;text-align: center;display:
     flex;background: #fff;z-index: 10;display: flex;align-items:center
@@ -64,7 +64,7 @@
   }
 
   @font-face {
-    font-family: 'iconfont';  /* project id 337892 */
+    font-family: 'iconfont';  /* project id 337892 */ 
     src: url('//at.alicdn.com/t/font_pp7b61121d78pvi.eot');
     src: url('//at.alicdn.com/t/font_pp7b61121d78pvi.eot?#iefix') format('embedded-opentype'),
     url('//at.alicdn.com/t/font_pp7b61121d78pvi.woff') format('woff'),
