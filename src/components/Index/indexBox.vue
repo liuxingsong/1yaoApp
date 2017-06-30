@@ -40,6 +40,10 @@
     mounted(){
       this.$http.get("http://s.maiyaole.com/js/wap/json/getsecondcategory_99.json")
       .then(res=>{
+<<<<<<< HEAD
+=======
+        // console.log(res.data.data.categoryinfo)
+>>>>>>> 5debd9498865b6a1bbb6ebd3f9b812b1fa24267d
         this.classData = res.data.data.categoryinfo
       })
     }

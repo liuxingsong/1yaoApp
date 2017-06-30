@@ -34,7 +34,7 @@ export default {
     getGoodsData(id) {
       this.$http.get(`http://s.maiyaole.com/js/wap/json/getsecondcategory_${id}.json`)
       .then((res)=>{
-        console.log(res.body.data.categoryinfo);
+        // console.log(res.body.data.categoryinfo);
         this.goodsData = res.body.data.categoryinfo
       })
     }
@@ -43,7 +43,7 @@ export default {
     //do something after mounting vue instance
     this.$http.get(`http://s.maiyaole.com/js/wap/json/getcategory.json`)
     .then((res)=>{
-      console.log( res.body.data.categoryinfo)
+      // console.log( res.body.data.categoryinfo)
       this.classData  =  res.body.data.categoryinfo
     })
     this.getGoodsData(99)
