@@ -2,8 +2,7 @@
 
 <template>
   <div class="list-page">
-    <my-classheader>
-    </my-classheader>
+    <my-classheader></my-classheader>
     <my-footer></my-footer>
 
     <my-content>
@@ -35,7 +34,7 @@ export default {
     getGoodsData(id) {
       this.$http.get(`http://s.maiyaole.com/js/wap/json/getsecondcategory_${id}.json`)
       .then((res)=>{
-        console.log(res.body.data.categoryinfo);
+        // console.log(res.body.data.categoryinfo);
         this.goodsData = res.body.data.categoryinfo
       })
     }
@@ -44,7 +43,7 @@ export default {
     //do something after mounting vue instance
     this.$http.get(`http://s.maiyaole.com/js/wap/json/getcategory.json`)
     .then((res)=>{
-      console.log( res.body.data.categoryinfo)
+      // console.log( res.body.data.categoryinfo)
       this.classData  =  res.body.data.categoryinfo
     })
     this.getGoodsData(99)
@@ -55,7 +54,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .list-page{
-  width: 100%;height: 100%;overflow: hidden;padding-bottom: 50px;
+  width: 100%;height: 100%;overflow: hidden;padding-bottom: 50px;padding-top:50px;
 }
 
 </style>

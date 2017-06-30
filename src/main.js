@@ -18,6 +18,9 @@ import "./assets/animate.css"
 import MintUi from "mint-ui"
 Vue.use(MintUi)
 
+import 'mint-ui/lib/style.css'
+
+
 
 Vue.component("my-header",myHeader)
 Vue.component("my-footer",Footer)
