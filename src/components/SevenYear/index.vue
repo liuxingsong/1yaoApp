@@ -30,6 +30,9 @@
       <img :src="sevenYearData.img10" alt="" class="bigImg">
       <img :src="sevenYearData.img11" alt="" class="bigImg">
     </my-content>
+    <div class="timeBack">
+      {{hour}} : {{minute}} : {{second}}
+    </div>
   </div>
 </template>
 <!-- <img :src="sevenYearData.img01" alt="" class="bigImg">
@@ -70,7 +73,26 @@ export default {
   data: function data() {
     return {
       selected:"0",
-      sevenYearData:[]
+      sevenYearData:[],
+      hour:"00",
+      minute:"00",
+      second:"00"
+    }
+  },
+  methods: {
+    timeBack() {
+      var date=new Date()
+      var time = date.getTime()
+      console.log(time);
+      var date2=new Date("2017/07/01")
+      var time2 = date2.getTime()
+      console.log(time2);
+      var hour = parseInt((time2-time)/1000/60/60)
+      this.hour = hour
+      var minute = Math.floor(((time2-time)/1000/60/60-hour)*60)
+      this.minute = minute
+      this.second = Math.floor((time2-time)/1000-hour*3600-minute*60)
+      setTimeout(timeBack(),1000)
     }
   },
   mounted () {
@@ -80,15 +102,7 @@ export default {
       console.log(res.body);
       this.sevenYearData = res.body
     })
-
-  },
-  methods: {
-    intop() {
-
-    },
-    gotop(){
-      console.log(2222);
-    }
+    this.timeBack()
   },
   components: {
     "my-sy-heder":ClassHeader
@@ -124,4 +138,6 @@ export default {
       -webkit-font-smoothing: antialiased;
       -webkit-text-stroke-width: 0.2px;
       -moz-osx-font-smoothing: grayscale;}
+
+  .timeBack{width: 200px;height: 50px;line-height: 50px;position: fixed;top: 55px;left:20px;background: #f9f9f9}
 </style>

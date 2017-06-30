@@ -25,24 +25,10 @@
     name:'my-footer',
     data(){
       return {
-        footerList:[
-          {"target":"/index","icons":"&#xe687;","name":"首页"},
-          {"target":"/class","icons":"&#xe621;","name":"分类"},
-          {"target":"/sevenYear","icons":"&#xe697;","name":""},
-          {"target":"/cart","icons":"&#xe6b3;","name":"购物车"},
-          {"target":"/mine","icons":"&#xe612;","name":"我的"},
-        ]
       }
-    },
-    methods:{
     }
   }
 </script>
-<!-- <ul>
-  <li v-for="(ele,index) in footerList" :key="index">
-    <router-link :to="ele.target" class="footerRouter"><span class="iconfontlxs"></span><p>{{ele.name}}</p></router-link>
-  </li>
-</ul> -->
 <style media="screen" scoped>
     a{color: #000;}
     .footer{
