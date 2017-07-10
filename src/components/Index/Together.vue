@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="Tg-content">
-      <div class="Tg-time">距离结束还有 
+      <div class="Tg-time">距离结束还有
         <span>{{hour}}</span>：
         <span>{{minute}}</span>：
         <span>{{second}}</span>
@@ -54,7 +54,7 @@ export default {
     .then(res=>res.json())
     .then((data)=>{
       this.listData = data.jsonData.today
-      console.log(this.listData)
+      // console.log(this.listData)
     })
   }
 

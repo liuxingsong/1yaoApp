@@ -68,45 +68,43 @@
 <img :src="sevenYearData.img11" alt="" class="bigImg"> -->
 <script>
   import ClassHeader from '../Class/ClassHeader'
-export default {
-  name: "sevenYear",
-  data: function data() {
-    return {
-      selected:"0",
-      sevenYearData:[],
-      hour:"00",
-      minute:"00",
-      second:"00"
+  export default {
+    name: "sevenYear",
+    data: function data() {
+      return {
+        selected:"0",
+        sevenYearData:[],
+        hour:"00",
+        minute:"00",
+        second:"00"
+      }
+    },
+    methods: {
+      timeBack() {
+        var time = new Date().getTime()
+        var time2 = new Date("2017/07/02").getTime()
+        var hour = parseInt((time2-time)/1000/60/60)
+        this.hour = hour>9?hour:"0"+hour
+        var minute = Math.floor(((time2-time)/1000/60/60-hour)*60)
+        this.minute = minute>9?minute:"0"+minute
+        var second = Math.floor((time2-time)/1000-hour*3600-minute*60)
+        this.second = second>9?second:"0"+second
+      }
+    },
+    mounted () {
+      setInterval(this.timeBack,1000)
+
+      //do something after mounting vue instance
+      this.$http.get("/static/mock/sevenYear.json")
+      .then((res)=>{
+        console.log(res.body);
+        this.sevenYearData = res.body
+      })
+
+    },
+    components: {
+      "my-sy-heder":ClassHeader
     }
-  },
-  methods: {
-    timeBack() {
-      var date=new Date()
-      var time = date.getTime()
-      console.log(time);
-      var date2=new Date("2017/07/01")
-      var time2 = date2.getTime()
-      console.log(time2);
-      var hour = parseInt((time2-time)/1000/60/60)
-      this.hour = hour
-      var minute = Math.floor(((time2-time)/1000/60/60-hour)*60)
-      this.minute = minute
-      this.second = Math.floor((time2-time)/1000-hour*3600-minute*60)
-      setTimeout(timeBack(),1000)
-    }
-  },
-  mounted () {
-    //do something after mounting vue instance
-    this.$http.get("/static/mock/sevenYear.json")
-    .then((res)=>{
-      console.log(res.body);
-      this.sevenYearData = res.body
-    })
-    this.timeBack()
-  },
-  components: {
-    "my-sy-heder":ClassHeader
-  }
 }
 </script>
 <style scoped>
