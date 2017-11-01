@@ -43,7 +43,7 @@
         </li>
         <li>
           <img src="http://p4.maiyaole.com/img/cmsPage/2016070402/wo-0815.png" alt="">
-          <p>我的</p>
+          <p>我的大佛挡杀佛</p>
         </li>
       </ul>
       <ul>
