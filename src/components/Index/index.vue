@@ -3,7 +3,7 @@
     <my-footer></my-footer>
     <lh-header></lh-header>
     <my-content>
-      <lh-banner></lh-banner>
+      <!-- <lh-banner></lh-banner> -->
       <lh-box></lh-box>
     </my-content>
   </div>
@@ -12,7 +12,7 @@
 
 <script>
 import Header from "./header"
-import Banner from "./Banner"
+// import Banner from "./Banner"
 import IndexBox from "./indexBox"
 
 export default {
@@ -24,7 +24,7 @@ export default {
   },
   components:{
     "lh-header":Header,
-    "lh-banner":Banner,
+    // "lh-banner":Banner
     "lh-box":IndexBox
   }
 

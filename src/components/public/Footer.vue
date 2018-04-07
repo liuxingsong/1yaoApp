@@ -7,12 +7,12 @@
       <li>
         <router-link :to="'/class'"><span class="iconfontlxs">&#xe621;</span><p>分类</p></router-link>
       </li>
-      <li>
+      <!-- <li>
         <router-link :to="'/sevenYear'"><span class="iconfontlxs">&#xe697;</span></router-link>
       </li>
       <li>
         <router-link :to="'/cart'"><span class="iconfontlxs">&#xe6b3;</span><p>购物车</p></router-link>
-      </li>
+      </li> -->
       <li>
         <router-link :to="'/mine'"><span class="iconfontlxs">&#xe612;</span><p>我的</p></router-link>
       </li>
@@ -36,15 +36,15 @@
       border-top: 1px solid #999;width: 100%;background: rgba(245,245,245,.9);z-index: 10
     }
     .footer ul li{
-      float: left;list-style: none;width: 20%;text-align: center;padding-top: 3px
+      float: left;list-style: none;width: 33.3333%;text-align: center;padding-top: 3px
     }
-    .footer ul li:nth-of-type(3){
+    /* .footer ul li:nth-of-type(3){
       position: relative;
     }
     .footer ul li:nth-of-type(3) .iconfontlxs{
       font-size: 50px;color: red;position: absolute;top: -10px;left: 6px;border: 4px solid #fff;background: #fff;
       border-radius: 50%
-    }
+    } */
     .footerRouter{
       color: #000
     }
